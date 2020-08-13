@@ -1,16 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fetch and Graph CSV</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
-  </head>
-  <body>
-    <h1>Maharashtra Covid-19 Data Plotting Using Chartjs</h1>
-    <canvas id="myChart" height="350" width="800"></canvas>
 
-    <script src="index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fetch and Graph CSV</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+  <h1><span id="State"></span> Covid-19 Data Plotting Using Chartjs</h1>
+  <div class="" id="drp-down">
+    <p class="text-center">Select States to View Corona Graph</p>
+    <div class="text-center">
+      <select name="" id="stateSelect">
+        <option value="" selected disabled>------------Select State------------</option>
+        <option value="ap"> Andhra Pradesh</option>
+        <option value="ar"> Arunachal Pradesh</option>
+        <option value="as"> Assam</option>
+        <option value="br"> Bihar </option>
+        <option value="ct"> Chhattisgarh </option>
+        <option value="ga"> Goa </option>
+        <option value="gj"> Gujarat </option>
+        <option value="hr"> Haryana </option>
+        <option value="hp"> Himachal Pradesh</option>
+        <option value="jk"> Jammu and Kashmir </option>
+        <option value="jh"> Jharkhand</option>
+        <option value="ka"> Karnataka</option>
+        <option value="kl"> Kerala </option>
+        <option value="mp"> Madhya Pradesh</option>
+        <option value="mh"> Maharashtra </option>
+        <option value="mn"> Manipur</option>
+        <option value="ml"> Meghalaya</option>
+        <option value="mz"> Mizoram</option>
+        <option value="nl"> Nagaland</option>
+        <option value="or"> Orissa</option>
+        <option value="pb"> Punjab</option>
+        <option value="rj"> Rajasthan </option>
+        <option value="sk"> Sikkim</option>
+        <option value="tn"> Tamil Nadu</option>
+        <option value="tg"> Telangana </option>
+        <option value="tr"> Tripura </option>
+        <option value="ut"> Uttarakhand</option>
+        <option value="up"> Uttar Pradesh</option>
+        <option value="wb"> West Bengal</option>
+        <option value="an"> Andaman and Nicobar Islands</option>
+        <option value="ch"> Chandigarh </option>
+        <option value="dn"> Dadra and Nagar Haveli and Daman and Diu </option>
+        <option value="dl"> Delhi </option>
+        <option value="ld"> Lakshadweep</option>
+        <option value="py"> Pondicherry </option>
+        <option value="la"> Ladakh </option>
+      </select>
+      <input class="btn btn-secondary btn-sm" id="SelectState" type="submit" />
+    </div>
+  </div>
+
+  <div id="Chart">
+    <canvas id="myChart" height="350" width="800"></canvas>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
 </html>
